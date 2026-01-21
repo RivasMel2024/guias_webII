@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Melisa Rivas</title>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4">
+            <input type="checkbox" id="menuToggle" class="peer hidden">
+            
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-gray-900 tracking-tight">
+                    &lt;Web/&gt;
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-gray-900 transition-all duration-300 underline-offset-4 hover:underline decoration-2 decoration-gray-900 font-medium">Inicio</a>
+                    <a href="#proyectos" class="text-gray-700 hover:text-gray-900 transition-all duration-300 underline-offset-4 hover:underline decoration-2 decoration-gray-900 font-medium">Proyectos</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-gray-900 transition-all duration-300 underline-offset-4 hover:underline decoration-2 decoration-gray-900 font-medium">Contacto</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <label for="menuToggle" class="md:hidden cursor-pointer">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="hidden peer-checked:block md:hidden pt-4 pb-2 border-t border-gray-200 mt-4">
+                <a href="#inicio" class="block py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-4 rounded-lg transition-colors duration-300">Inicio</a>
+                <a href="#proyectos" class="block py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-4 rounded-lg transition-colors duration-300">Proyectos</a>
+                <a href="#contacto" class="block py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-4 rounded-lg transition-colors duration-300">Contacto</a>
+                <label for="menuToggle" class="block py-3 text-center text-gray-500 cursor-pointer hover:text-gray-900 transition-colors duration-300 mt-2">
+                    Cerrar ✕
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduccion-->
+    <section class="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+                Desarrollo web II
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                A lo largo de esta materia veremos los conceptos y herramientas necesarias para crear sitios web modernos y responsivos con herramientas avanzadas como Tailwind CSS, ReactJS, TypeScript y más.
+            </p>
+        </div>
+    </section>
+
+    <!-- Guias -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Guias de trabajo</h2>
+            <div class="grid md:grid-cols-1 gap-8">
+                <!-- Guia 1 Card -->
+                <div class="p-8 bg-gray-50 rounded-lg hover:bg-gray-100 transition-all duration-300 hover:shadow-xl border border-gray-200">
+                    <div class="text-4xl mb-4 font-bold text-gray-900">Guia 1</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Introduccion a Tailwind CSS</h3>
+                    <p class="text-gray-600 mb-6">Guía práctica para aprender Tailwind CSS mediante 5 ejercicios: tarjetas de precios, productos, galerías, formularios y landing pages. El proyecto final consiste en crear una página web temática con 4 secciones y diseño responsivo, más un index que enlace todos los ejercicios.</p>
+                    
+                    <!-- Buttons Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- Pricing Card Button -->
+                        <a href="./guia1_20245324/pricing-card/pricing.html" class="group bg-gray-100 hover:bg-gray-900 text-gray-900 hover:text-white px-6 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium text-center border-2 border-gray-200 hover:border-gray-900">
+                            Pricing Card
+                        </a>
+
+                        <!-- Producto Button -->
+                        <a href="./guia1_20245324/producto/producto.html" class="group bg-gray-100 hover:bg-gray-900 text-gray-900 hover:text-white px-6 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium text-center border-2 border-gray-200 hover:border-gray-900">
+                            Producto
+                        </a>
+
+                        <!-- Galería Button -->
+                        <a href="./guia1_20245324/galeria/galeria.html" class="group bg-gray-100 hover:bg-gray-900 text-gray-900 hover:text-white px-6 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium text-center border-2 border-gray-200 hover:border-gray-900">
+                            Galería
+                        </a>
+
+                        <!-- Login Button -->
+                        <a href="./guia1_20245324/login/login.html" class="group bg-gray-100 hover:bg-gray-900 text-gray-900 hover:text-white px-6 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium text-center border-2 border-gray-200 hover:border-gray-900">
+                            Login
+                        </a>
+
+                        <!-- Clipboard -->
+                        <a href="./guia1_20245324/clipboard/index.html" class="group bg-gray-100 hover:bg-gray-900 text-gray-900 hover:text-white px-6 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium text-center border-2 border-gray-200 hover:border-gray-900">
+                            Clipboard Landing
+                        </a>
+
+                        <!-- Pagina del tema de interes -->
+                        <a href="./guia1_20245324/tema_interes/tlou.html" class="group bg-gray-900 hover:bg-gray-800 text-white px-6 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium text-center border-2 border-gray-900 shadow-lg">
+                            Ejercicio Practico
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Contacto
+            </h2>
+            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                Escribeme a cualquiera de los siguientes correos o visita mi GitHub para más de mis proyectos.
+            </p>
+            
+            <!-- Contact Cards -->
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- Correo Personal -->
+                <a href="mailto:rivasmelisa2024@gmail.com" class="bg-slate-800 p-8 rounded-lg hover:bg-slate-700 transition-all duration-300 transform hover:scale-105 border border-slate-700 hover:border-slate-500 group">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gray-200">Correo Personal</h3>
+                    <p class="text-gray-400 group-hover:text-gray-300">rivasmelisa2024@gmail.com</p>
+                </a>
+                
+                <!-- Correo Educativo -->
+                <a href="mailto:20245324@esen.edu.sv" class="bg-slate-800 p-8 rounded-lg hover:bg-slate-700 transition-all duration-300 transform hover:scale-105 border border-slate-700 hover:border-slate-500 group">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gray-200">Correo Educativo</h3>
+                    <p class="text-gray-400 group-hover:text-gray-300">20245324@esen.edu.sv</p>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/RivasMel2024" target="_blank" class="bg-slate-800 p-8 rounded-lg hover:bg-slate-700 transition-all duration-300 transform hover:scale-105 border border-slate-700 hover:border-slate-500 group">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gray-200">GitHub</h3>
+                    <p class="text-gray-400 group-hover:text-gray-300">@RivasMel2024</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600">© 2026 MELISA RIVAS. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

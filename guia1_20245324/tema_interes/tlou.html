@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORT DEL FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- IMPORT DE TAILWIND CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: 'Oswald', sans-serif;
+        }
+    </style>
+    <title>The Last of Us</title>
+</head>
+<body class="bg-zinc-900 text-white font-sans">
+    <!-- Nav Bar -->
+    <nav class="fixed w-full bg-black/90 backdrop-blur-sm z-50 border-b border-zinc-800">
+        <div class="container mx-auto px-6 py-4">
+            <input type="checkbox" id="menuToggle" class="peer hidden">
+            
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-green-500 tracking-wider">THE LAST OF US</div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="hover:text-green-400 transition-all duration-300 underline-offset-4 hover:underline decoration-2 decoration-green-500">INICIO</a>
+                    <a href="#historia" class="hover:text-green-400 transition-all duration-300 underline-offset-4 hover:underline decoration-2 decoration-green-500">HISTORIA</a>
+                    <a href="#personajes" class="hover:text-green-400 transition-all duration-300 underline-offset-4 hover:underline decoration-2 decoration-green-500">PERSONAJES</a>
+                    <a href="#galeria" class="hover:text-green-400 transition-all duration-300 underline-offset-4 hover:underline decoration-2 decoration-green-500">GALERÍA</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <label for="menuToggle" class="md:hidden cursor-pointer">
+                    <svg class="w-6 h-6 block peer-checked:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="hidden peer-checked:block md:hidden pt-4 pb-2">
+                <a href="#inicio" class="block py-2 hover:text-green-400 transition-colors duration-300">INICIO</a>
+                <a href="#historia" class="block py-2 hover:text-green-400 transition-colors duration-300">HISTORIA</a>
+                <a href="#personajes" class="block py-2 hover:text-green-400 transition-colors duration-300">PERSONAJES</a>
+                <a href="#galeria" class="block py-2 hover:text-green-400 transition-colors duration-300">GALERÍA</a>
+                <label for="menuToggle" class="block py-2 text-gray-500 cursor-pointer hover:text-green-400 transition-colors duration-300">CERRAR ✕</label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección 1: Inicio -->
+    <section id="inicio" class="min-h-screen bg-gradient-to-br from-zinc-900 via-emerald-950 to-zinc-900 flex items-center pt-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl animate-fadeIn">
+                <h1 class="text-3xl md:text-8xl font-bold mb-6 leading-tight">
+                    WHEN YOU'RE LOST IN THE DARKNESS,<br/>
+                    <span class="text-green-500">LOOK FOR THE LIGHT</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                    Un mundo devastado por una pandemia causada por el hongo <span class="text-green-500">Cordyceps</span> . La historia sigue a <span class="text-green-500">Joel</span>, un contrabandista, y a <span class="text-green-500">Ellie</span>, una niña inmune al virus, quienes intentan sobrevivir en un país lleno de infectados y bandas de supervivientes. Cuestionando la moralidad y el sacrificio en un mundo sin esperanza.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Historia -->
+    <section id="historia" class="min-h-screen bg-zinc-800 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-12 text-center">LA HISTORIA</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-zinc-900 p-8 rounded-lg border border-zinc-700 hover:border-green-500 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/20">
+                    <h3 class="text-3xl font-bold mb-4 text-green-500">EL Cordyceps</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Con la mutación del hongo Cordyceps comienza a infectar cerebros humanos y provoca el colapso total de la sociedad. En medio del caos de la primera noche del brote, Joel intenta huir con su hija Sarah, pero ella muere durante la evacuación militar. Aunque el foco del inicio es la pandemia, esta pérdida personal es lo que destruye emocionalmente a Joel y define quién será durante el resto del juego.
+                    </p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-lg border border-zinc-700 hover:border-green-500 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/20">
+                    <h3 class="text-3xl font-bold mb-4 text-green-500">La Misión</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        20 años después del brote, surge un grupo rebelde llamado Las Luciérnagas, una facción que lucha contra el régimen militar y busca restaurar la sociedad. Ellie se convierte en su mayor esperanza, porque es inmune al Cordyceps: fue mordida, pero no se infectó. Para las Luciérnagas, ella podría ser la clave para crear una vacuna, lo cual salvaria a la humanidad. Para eso, Joel fue contratado para llevar a Ellie a un hospital de Las Luciérnagas en Salt Lake City.
+                    </p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-lg border border-zinc-700 hover:border-green-500 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/20">
+                    <h3 class="text-3xl font-bold mb-4 text-green-500">El Vinculo</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Joel y Ellie forman su vínculo a lo largo del viaje al verse obligados a sobrevivir juntos, pasando de una relación fría y distante a una conexión profunda basada en la confianza. Ellie rompe poco a poco las barreras emocionales de Joel, él empieza a verla como algo más que una responsabilidad, comparten heridas del pasado y se acompañan en momentos decisivos, lo que transforma su relación en un lazo casi de padre e hija
+                    </p>
+                </div>
+                <div class="bg-zinc-900 p-8 rounded-lg border border-zinc-700 hover:border-green-500 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/20">
+                    <h3 class="text-3xl font-bold mb-4 text-green-500">Sacrificar a la Humanidad</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Al llegar al laboratorio Joel descubre que las Luciérnagas planean operar a Ellie aun sabiendo que la cirugía la matará, no lo acepta porque Ellie se ha convertido en la única persona que le queda y a la que no está dispuesto a perder. Para él, Ellie ya no es “la cura” ni un objetivo: es familia. Joel decide impedir la operación y sacarla del hospital. Después, le oculta la verdad para protegerla de la carga emocional de saber que sacrificó a la humanidad por ella.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Personajes -->
+    <section id="personajes" class="min-h-screen bg-gradient-to-b from-zinc-900 to-zinc-800 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-12 text-center">PERSONAJES</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Joel -->
+                <div class="group relative overflow-hidden rounded-lg bg-zinc-900 border-2 border-zinc-700 hover:border-green-500 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30">
+                    <div class="relative h-96 bg-gradient-to-b from-green-900 to-zinc-900 overflow-hidden">
+                        <img src="../images/tlou/Joel_Miller.jpeg" alt="Joel" class="w-full h-full object-cover object-top">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/50 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-zinc-900 to-transparent">
+                        <h3 class="text-3xl font-bold mb-2 text-green-400">JOEL</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed">Contrabandista endurecido por la pérdida, encuentra una nueva razón para vivir.</p>
+                    </div>
+                </div>
+                <!-- Ellie -->
+                <div class="group relative overflow-hidden rounded-lg bg-zinc-900 border-2 border-zinc-700 hover:border-green-500 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30">
+                    <div class="relative h-96 bg-gradient-to-b from-green-900 to-zinc-900 overflow-hidden">
+                        <img src="../images/tlou/Ellie.jpeg" alt="Ellie" class="w-full h-full object-cover object-top">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/50 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-zinc-900 to-transparent">
+                        <h3 class="text-3xl font-bold mb-2 text-green-400">ELLIE</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed">Joven valiente con inmunidad al virus, representa la esperanza de la humanidad.</p>
+                    </div>
+                </div>
+                <!-- Tess -->
+                <div class="group relative overflow-hidden rounded-lg bg-zinc-900 border-2 border-zinc-700 hover:border-green-500 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30">
+                    <div class="relative h-96 bg-gradient-to-b from-green-900 to-zinc-900 overflow-hidden">
+                        <img src="../images/tlou/tess.jpeg" alt="Tess" class="w-full h-full object-cover object-top">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/50 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-zinc-900 to-transparent">
+                        <h3 class="text-3xl font-bold mb-2 text-green-400">TESS</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed">Socia de Joel, pragmática y decidida en un mundo sin piedad.</p>
+                    </div>
+                </div>
+                <!-- Bill -->
+                <div class="group relative overflow-hidden rounded-lg bg-zinc-900 border-2 border-zinc-700 hover:border-green-500 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30">
+                    <div class="relative h-96 bg-gradient-to-b from-green-900 to-zinc-900 overflow-hidden">
+                        <img src="../images/tlou/bill.jpeg" alt="Bill" class="w-full h-full object-cover object-top">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/50 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-zinc-900 to-transparent">
+                        <h3 class="text-3xl font-bold mb-2 text-green-400">BILL</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed">Superviviente solitario que se convierte en aliado y compañero de Ellie.</p>
+                    </div>
+                </div>
+                <!-- Tommy -->
+                 <div class="group relative overflow-hidden rounded-lg bg-zinc-900 border-2 border-zinc-700 hover:border-green-500 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30">
+                    <div class="relative h-96 bg-gradient-to-b from-green-900 to-zinc-900 overflow-hidden">
+                        <img src="../images/tlou/tommy_miller.jpeg" alt="Tommy" class="w-full h-full object-cover object-top">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/50 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-zinc-900 to-transparent">
+                        <h3 class="text-3xl font-bold mb-2 text-green-400">TOMMY</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed">Hermano menor de Joel, ex-militar que busca redención en un asentamiento pacífico.</p>
+                    </div>
+                </div>
+                <!-- Marlene -->
+                 <div class="group relative overflow-hidden rounded-lg bg-zinc-900 border-2 border-zinc-700 hover:border-green-500 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30">
+                    <div class="relative h-96 bg-gradient-to-b from-green-900 to-zinc-900 overflow-hidden">
+                        <img src="../images/tlou/marlene.jpeg" alt="Marlene" class="w-full h-full object-cover object-top">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/50 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-zinc-900 to-transparent">
+                        <h3 class="text-3xl font-bold mb-2 text-green-400">MARLENE</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed">Líder de los Luciérnagas, una facción rebelde que busca una cura para la infección.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección 4: Galería/Features -->
+    <section id="galeria" class="min-h-screen bg-zinc-900 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-16 text-center">GALERÍA</h2>
+            <!-- Gallery Container -->
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <!-- Image 1 -->
+              <div class="relative group overflow-hidden rounded-lg border-2 border-zinc-700">
+                <img src="../images/tlou/guitarra.jpeg" alt="The Last of Us Guitar" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="relative group overflow-hidden rounded-lg border-2 border-zinc-700">
+                <img src="../images/tlou/the last of us™ parte ii_20210716233036.jpg" alt="The Last of Us Part II" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="relative group overflow-hidden rounded-lg border-2 border-zinc-700">
+                <img src="../images/tlou/The Last of Us™ Parte II_20221108193810.jpg" alt="The Last of Us Part II Landscape" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="relative group overflow-hidden rounded-lg border-2 border-zinc-700">
+                <img src="../images/tlou/Ellie.jpeg" alt="Ellie Character" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="relative group overflow-hidden rounded-lg border-2 border-zinc-700">
+                <img src="../images/tlou/Joel_Miller.jpeg" alt="Joel Miller Character" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="relative group overflow-hidden rounded-lg border-2 border-zinc-700">
+                <img src="../images/tlou/tess.jpeg" alt="Tess Character" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="mt-20 text-center border-t border-zinc-800 pt-8">
+        <p class="text-gray-500">© 2026 The Last of Us - Naughty Dog</p>
+        <p class="text-sm text-gray-600 mt-2">Desarrollado por Melisa Rivas</p>
+    </div>
+</body>
+</html>
