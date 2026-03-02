@@ -1,18 +1,36 @@
-import { useUIStore } from './store/uiStore'; 
+import AppRouter from './routes/AppRouter';
+import { Toaster } from 'react-hot-toast';
  
-function App() { 
-  const { theme, toggleTheme } = useUIStore(); 
-   
-  return ( 
-    <div className={`min-h-screen ${theme === 'dark' ? 'bg-gray-900' : 'bg-gray-50'}`}> 
-      <h1 className={`text-4xl font-bold text-center pt-10 ${theme === 'dark' ? 'text-white' : 'text-blue-600'}`}> 
-        Task Manager Pro 
-      </h1> 
-      <button onClick={toggleTheme} className="btn-primary mx-auto block mt-4"> 
-        Cambiar a {theme === 'dark' ? 'Light' : 'Dark'} 
-      </button> 
-    </div> 
-  ); 
+function App() {    
+  return (
+    <>
+      <AppRouter />
+      <Toaster 
+        position="top-right"
+        toastOptions={{
+          duration: 3000,
+          style: {
+            background: '#363636',
+            color: '#fff',
+          },
+          success: {
+            duration: 3000,
+            iconTheme: {
+              primary: '#10b981',
+              secondary: '#fff',
+            },
+          },
+          error: {
+            duration: 4000,
+            iconTheme: {
+              primary: '#ef4444',
+              secondary: '#fff',
+            },
+          },
+        }}
+      />
+    </>
+  );
 } 
  
 export default App;

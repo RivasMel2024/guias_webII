@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
-import { registerUser } from '../../services/authService';
-import { useAuthStore } from '../../store/authStore';
+import { useState } from 'react'; 
+import { useNavigate, Link } from 'react-router-dom'; 
+import { useForm } from 'react-hook-form'; 
+import { registerUser } from '../../services/authService';  
+import { useAuthStore } from '../../store/authStore'
 
 export default function Register() {
     const navigate = useNavigate();
